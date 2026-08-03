@@ -7,19 +7,19 @@ Homebrew packages maintained by [nikuscs](https://github.com/nikuscs).
 Install:
 
 ```sh
-brew install --cask nikuscs/tap/wormhole-cli
+brew install nikuscs/tap/wormhole
 ```
 
 Upgrade:
 
 ```sh
-brew upgrade --cask wormhole-cli
+brew upgrade wormhole
 ```
 
 Uninstall:
 
 ```sh
-brew uninstall --cask wormhole-cli
+brew uninstall wormhole
 ```
 
 See [nikuscs/wormhole](https://github.com/nikuscs/wormhole) for documentation.
