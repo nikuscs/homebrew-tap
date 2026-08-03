@@ -1,7 +1,6 @@
 class Wormhole < Formula
   desc "Secure tunnels for agents, automation, and worktrees"
   homepage "https://github.com/nikuscs/wormhole"
-  version "0.1.0"
   license "MIT"
 
   if OS.mac?
