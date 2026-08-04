@@ -5,22 +5,23 @@ class Wormhole < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.1.0/wormhole-cli-aarch64-apple-darwin.zip"
-      sha256 "52cb4b5d4f10010819cf8125bcad5095ca3bc2a4c6859e71e5526ecc0b545732"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.1.1/wormhole-cli-aarch64-apple-darwin.zip"
+      sha256 "e2bd61bbf4858fbba4541f6b0aab9221a005be2ca7e315250f110311114453d1"
     else
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.1.0/wormhole-cli-x86_64-apple-darwin.zip"
-      sha256 "04a9320009e28d2e3f29d48ccd193ae31708a9f3619df6d7be7e261b209e2e01"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.1.1/wormhole-cli-x86_64-apple-darwin.zip"
+      sha256 "fe71fc267f27a645d166bc64ed020cfd8e756782231afc82111defc706ba4540"
     end
   elsif Hardware::CPU.arm?
-    url "https://github.com/nikuscs/wormhole/releases/download/v0.1.0/wormhole-cli-aarch64-unknown-linux-gnu.zip"
-    sha256 "7531185a1074fbaa12eefd595533ffb7ba550fef142eaad2d6511ebd586bdeaa"
+    url "https://github.com/nikuscs/wormhole/releases/download/v0.1.1/wormhole-cli-aarch64-unknown-linux-gnu.zip"
+    sha256 "a9d6a8a259fa60b8446eb49d6cda0d512da6d9dd05e2c9a4329f238564bccc33"
   else
-    url "https://github.com/nikuscs/wormhole/releases/download/v0.1.0/wormhole-cli-x86_64-unknown-linux-gnu.zip"
-    sha256 "f493b2ef73caede420b34e2376933bfd65ac8a6dcad0f7121c0c6ac249bac936"
+    url "https://github.com/nikuscs/wormhole/releases/download/v0.1.1/wormhole-cli-x86_64-unknown-linux-gnu.zip"
+    sha256 "c17c539a09e08d703ebdd5613b47a34b8149b4db839f97dc01cd904a5d88c9df"
   end
 
   def install
     bin.install "wormhole"
+    doc.install "LICENSE", "THIRD_PARTY_NOTICES"
   end
 
   test do
