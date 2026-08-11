@@ -1,25 +1,25 @@
 class Wormhole < Formula
   desc "CLI for exposing local services through Wormhole relays and provider tunnels"
   homepage "https://github.com/nikuscs/wormhole"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.0/wormhole-cli-aarch64-apple-darwin.zip"
-      sha256 "9178a1bb9f0aff6aecbd9c3e46bdafb57df2ec42c52b38e3dc0f48a1cbe8a217"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.1/wormhole-cli-aarch64-apple-darwin.zip"
+      sha256 "c3e0938d5ba26f76cd643373cbd2062749c6b13afb10767754bf4c4e26438c7a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.0/wormhole-cli-x86_64-apple-darwin.zip"
-      sha256 "45d13fa4c82b7ddfa6cda57a816ccf74db0ceb845806a70b4b68d565cc23569a"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.1/wormhole-cli-x86_64-apple-darwin.zip"
+      sha256 "355bd87817a2f0164d14558bc1c5595743295e13984484891370ce7d6343acf9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.0/wormhole-cli-aarch64-unknown-linux-gnu.zip"
-      sha256 "fa0c692deb906167a0408c7b2d6338151080dd7b21cbb85bfcf6e9ceea579fba"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.1/wormhole-cli-aarch64-unknown-linux-gnu.zip"
+      sha256 "6c66a3d0d4614cd2a4a3ec6b35ea28be9eac1676bfd9d3c192cb3ea960f9eb55"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.0/wormhole-cli-x86_64-unknown-linux-gnu.zip"
-      sha256 "01926c02b0a8fc38a8e833fb5b66b451cd7b59813e953848827172ff8f013b83"
+      url "https://github.com/nikuscs/wormhole/releases/download/v0.2.1/wormhole-cli-x86_64-unknown-linux-gnu.zip"
+      sha256 "0bb5a18c6250b1e263609f42e03d899e24934a7d17c6aca20fe78a5247a74edd"
     end
   end
   license "MIT"
